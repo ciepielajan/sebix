@@ -40,6 +40,23 @@
       }
     }, 1000);
     </script>
+    <script>
+      var today = new Date();
+      var BigDay = new Date("Jun 17, 2043 16:00:00");
+      var msPerDay = 24 * 60 * 60 * 1000;
+      var timeLeft = (BigDay.getTime() - today.getTime());
+      var e_daysLeft = timeLeft / msPerDay;
+      var daysLeft = Math.floor(e_daysLeft);
+      var yearsLeft = 0;
+      if (daysLeft > 365) {
+        yearsLeft = Math.floor(daysLeft / 365);
+        daysLeft = daysLeft % 365;
+      }
+      var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
+      var hrsLeft = Math.floor(e_hrsLeft);
+      var minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60);
+      document.write(yearsLeft + " years " + daysLeft + " days " + hrsLeft + " hours " + minsLeft + " minutes");
+    </script>
    
     <h3>KOCIACZEK - SZCZENSCIE</h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Hz42JY3qQAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
