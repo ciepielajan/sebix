@@ -25,7 +25,21 @@
       var hrsLeft = Math.floor(e_hrsLeft);
       var minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60);
       document.getElementById("demo").innerHTML = yearsLeft + " years " + daysLeft + " days " + hrsLeft + " hours " + minsLeft + " minutes";
-
+      
+      var date1 = new Date("2/20/2000"); // ustawienie daty za pomocą tekstu (miesiąc/dzień/rok)
+      var date2 = new Date("10/1/2017");
+      var diff = new Date(Math.abs(date2.getTime() - date1.getTime()));
+      alert((diff.getFullYear() - 1970) + " lat " + diff.getMonth() + " miesięcy " + diff.getDate() + " dni" );
+      
+      var date1 = new Date(); // today
+      var date2 = new Date("Jun 17, 2043 16:00:00");
+      var diff = new Date(Math.abs(date2.getTime() - date1.getTime()));
+      alert((diff.getFullYear() - 1970) + " lat " + diff.getMonth() + " miesięcy " + diff.getDate() + " dni" );
+      
+      var date1 = new Date(); // today
+      var date2 = new Date("Jun 17, 2043 16:00:00");
+      var diff = new Date(Math.abs(date2.getTime() - date1.getTime()));
+      alert((diff.getFullYear() - 1970) + " lat " + diff.getMonth() + " miesięcy " + diff.getDate() + " dni"  + diff.getHours() + " godzin" );
     </script>
    
     <h3>KOCIACZEK - SZCZENSCIE</h3>
