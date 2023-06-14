@@ -1,20 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="pl">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Szczęście SEBIXA</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
-    <!-- Display the countdown timer in an element -->
-    <h1 id="demo">ILE SZCZĘŚCIA DLA SEBIXA</h1>
-    
-    <script>           
-      var date1 = new Date(); // today
-      var date2 = new Date("Jun 17, 2043 16:00:00");
-      var diff = new Date(Math.abs(date2.getTime() - date1.getTime()));
-      document.getElementById("demo").innerHTML = diff.getFullYear() - 1970 + " lat " + diff.getMonth() + " miesięcy " + diff.getDate() + " dni "  + diff.getHours() + " godzin " + diff.getMinutes() + " minut ";
-    </script>
-   
+    <h1>ILE SZCZĘŚCIA DLA SEBIXA</h1>
     <h3>KOCIACZEK - SZCZENSCIE</h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Hz42JY3qQAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="counter__clock">
+      <div class="counter__clock-item">
+          <div class="counter__clock-item--calender">
+              <span class="counter__clock-item--grey"></span>
+              <p class="counter__clock-item--number"></p>
+          </div>
+          <p class="counter__clock-item--desc">YEARS</p>
+      </div>
+      <div class="counter__clock-item">
+          <div class="counter__clock-item--calender">
+              <span class="counter__clock-item--grey"></span>
+              <p class="counter__clock-item--number"></p>
+          </div>
+          <p class="counter__clock-item--desc">DAYS</p>
+      </div>
+      <div class="counter__clock-item">
+          <div class="counter__clock-item--calender">
+              <span class="counter__clock-item--grey"></span>
+              <p class="counter__clock-item--number"></p>
+          </div>
+          <p class="counter__clock-item--desc">HRS</p>
+      </div>
+      <div class="counter__clock-item">
+          <div class="counter__clock-item--calender">
+              <span class="counter__clock-item--grey"></span>
+              <p class="counter__clock-item--number"></p>
+          </div>
+          <p class="counter__clock-item--desc">MIN</p>
+      </div>
+      <div class="counter__clock-item">
+          <div class="counter__clock-item--calender">
+              <span class="counter__clock-item--grey"></span>
+              <p class="counter__clock-item--number"></p>
+          </div>
+          <p class="counter__clock-item--desc">SEC</p>
+      </div>
+  </div>
+    
+    <script src="main.js"></script>
   </body>
 </html>
