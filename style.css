@@ -47,6 +47,7 @@ h2 {
     text-transform: lowercase;
     font-style: italic;
     letter-spacing: 10px;
+    font-weight: normal;
 }
 
 .baby {
